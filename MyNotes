@@ -1,0 +1,12 @@
+1.1  Tasks of the Kernel
+   The first bullet says :
+     "For example, when the kernel addresses a hard disk, it must decide
+which path to use to copy data from disk to memory, where the data reside, which commands
+must be sent to the disk via which path, and so on."
+   Perharps it wanted to say :
+      "For example, when the kernel addresses a hard disk, it must decide :
+which path to use to copy data from memory (where the data reside) to disk ,
+which commands must be sent to the disk via which path, 
+and so on. "
+
+
