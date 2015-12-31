@@ -1,4 +1,4 @@
-1.1  Tasks of the Kernel
+E-1.1  Tasks of the Kernel
    The first bullet says :
      "For example, when the kernel addresses a hard disk, it must decide
 which path to use to copy data from disk to memory, where the data reside, which commands
@@ -8,5 +8,9 @@ must be sent to the disk via which path, and so on."
 which path to use to copy data from memory (where the data reside) to disk ,
 which commands must be sent to the disk via which path, 
 and so on. "
+
+Q-1.3.1 Processes, Task Switching, and Scheduling
+"Each process is assigned address space in the virtual memory of the CPU".
+So does this mean that there is a cincept of virtual memory for the CPU also? 
 
 
