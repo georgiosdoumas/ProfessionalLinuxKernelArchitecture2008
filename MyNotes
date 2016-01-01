@@ -22,7 +22,7 @@ accessed can be satisfied from the same page for both."
 I suppose that the grammatically correct end of the sentence would be 
     " - read-only accesses can be satisfied from the same page for both (parent and child)."
     
-1.3.3 Address Spaces and Privilege Levels
+I-1.3.3 Address Spaces and Privilege Levels
 (page 9) Privilege Levels
 I am rephrasing the paragraph for more clarity and better flow of reading:  
 Original text 
@@ -41,6 +41,15 @@ Interrupts occur at random times, so some random userland process will happen to
 and since the interrupt will most likely be unconnected with the cause of the interrupt, the kernel has no business
 with the contents of the current userspace. When operating in interrupt context, the kernel must be more
 cautious than normal; for instance, it must not go to sleep.
+
+(page 10) 
+To find the kernel threads in a multi-processor system we can use the command
+ps fax | grep /*]$
+and if we want to find specifically the kthreads under processor 0,1,2,3  for example , we can use respectively
+ps fax | grep /*]$ | grep /0]
+ps fax | grep /*]$ | grep /1] 
+...
+ps fax | grep /*]$ | grep /3]
 
 
 
