@@ -25,7 +25,7 @@ I suppose that the grammatically correct end of the sentence would be
 I-1.3.3 Address Spaces and Privilege Levels
 (page 9) Privilege Levels
 I am rephrasing the paragraph for more clarity and better flow of reading:  
-Original text 
+     Original text 
 "Besides executing code on behalf of a user program, the kernel can also be activated by asynchronous
 hardware interrupts, and is then said to run in interrupt context. The main difference to running in process
 context is that the userspace portion of the virtual address space must not be accessed. Because interrupts
@@ -33,7 +33,7 @@ occur at random times, a random userland process is active when an interrupt occ
 interrupt will most likely be unconnected with the cause of the interrupt, the kernel has no business
 with the contents of the current userspace. When operating in interrupt context, the kernel must be more
 cautious than normal; for instance, it must not go to sleep."
-My suggestion 
+    My suggestion 
 Besides executing code on behalf of a user program, the kernel can also be activated by asynchronous
 hardware interrupts, and is then said to run in interrupt context. The main difference to running in process
 context is that ,in interrupt context, the userspace portion of the virtual address space must not be accessed. 
@@ -50,6 +50,23 @@ ps fax | grep /*]$ | grep /0]
 ps fax | grep /*]$ | grep /1] 
 ...
 ps fax | grep /*]$ | grep /3]
+
+
+E-Figure 1-6: Virtual and physical addresses.
+The text under Figure says : 
+"Physical pages are often called page frames. In contrast, the term page is reserved for pages in virtual
+address space." 
+Then the single Page Frame at the right part of the Figure should have dark-gray color , like the one used in 
+depicting RAM , and not light-gray color. 
+
+Q-(page 11)
+   In the next paragraph the text mentions : 
+"Page 5 of A and page 1 of B both point to the physical page frame 5. This is possible because
+entries in both virtual address spaces (albeit at different positions) point to the same page."
+   But for me this is not an explanation , it is just a restatement of the event. I would prefer something like :
+Page 5 of A and page 1 of B both point to the physical page frame 5. So we see that it is possible for
+entries in  virtual address spaces of both processes (albeit at different positions) to  point to the same page frame.
+Why can this happen? Because .... (and a sinple explanation should follow)
 
 
 
