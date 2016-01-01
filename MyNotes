@@ -21,6 +21,29 @@ by deferring the copy operations until either parent or child writes to a page â
 accessed can be satisfied from the same page for both."
 I suppose that the grammatically correct end of the sentence would be 
     " - read-only accesses can be satisfied from the same page for both (parent and child)."
+    
+1.3.3 Address Spaces and Privilege Levels
+(page 9) Privilege Levels
+I am rephrasing the paragraph for more clarity and better flow of reading:  
+Original text 
+"Besides executing code on behalf of a user program, the kernel can also be activated by asynchronous
+hardware interrupts, and is then said to run in interrupt context. The main difference to running in process
+context is that the userspace portion of the virtual address space must not be accessed. Because interrupts
+occur at random times, a random userland process is active when an interrupt occurs, and since the
+interrupt will most likely be unconnected with the cause of the interrupt, the kernel has no business
+with the contents of the current userspace. When operating in interrupt context, the kernel must be more
+cautious than normal; for instance, it must not go to sleep."
+My suggestion 
+Besides executing code on behalf of a user program, the kernel can also be activated by asynchronous
+hardware interrupts, and is then said to run in interrupt context. The main difference to running in process
+context is that ,in interrupt context, the userspace portion of the virtual address space must not be accessed. 
+Interrupts occur at random times, so some random userland process will happen to be active when an interrupt occurs, 
+and since the interrupt will most likely be unconnected with the cause of the interrupt, the kernel has no business
+with the contents of the current userspace. When operating in interrupt context, the kernel must be more
+cautious than normal; for instance, it must not go to sleep.
+
+
+
 
 
 
