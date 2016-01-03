@@ -69,6 +69,17 @@ entries in  virtual address spaces of both processes (albeit at different positi
 Why can this happen? Because .... (and a sinple explanation should follow)
 
 
+E-1.3.14 Object Management and Reference Counting
+page 24 , Sets of Objects
+   The text after the code snippet says :
+"Since the management structure for sets is nothing other than a kernel object, 
+it can be managed via the previously discussed struct kobj.".
+   Of cource the correct would be : 
+"Since the management structure for sets is nothing other than a kernel object, 
+it can be managed via the previously discussed struct kobject.".
+
+
+
 
 
 
