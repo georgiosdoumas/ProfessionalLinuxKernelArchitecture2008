@@ -78,6 +78,16 @@ it can be managed via the previously discussed struct kobj.".
 "Since the management structure for sets is nothing other than a kernel object, 
 it can be managed via the previously discussed struct kobject.".
 
+E-1.5 Some Notes on Presentation
+(page 30) the text is 
+"The kernel has to deal with this situation somehow, usually by returning an error return
+code to userspace if a task is performed as a response to a request by an application, or by omitting a
+warning message to the system log."
+    It seems that the writer wanted to say emitting and not omitting:
+"The kernel has to deal with this situation somehow, usually by returning an error return
+code to userspace if a task is performed as a response to a request by an application, or by emitting a
+warning message to the system log."
+
 
 
 
