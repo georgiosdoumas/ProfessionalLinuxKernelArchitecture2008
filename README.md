@@ -4,3 +4,4 @@ Here I will keep my notes :
 1.Possible errata (symbol : E- )
 2.Questions that I have while reading the text (with answers if I manage to find them) (symbol Q- )
 3.Improvements on the text (if I think that I can phrase something better than the original text) (symbol I- )
+4.Notes , something that I find usefull to remember or stick by (symbol N- )
