@@ -88,8 +88,14 @@ warning message to the system log."
 code to userspace if a task is performed as a response to a request by an application, or by emitting a
 warning message to the system log."
 
-
-
+I-2.1 Process Priorities
+(page 38) 
+   The text at the end of  mumber 2 says : 
+"This allows, for instance, for distribution the available time between all processes of different users, 
+and then among the processes of each user."
+   Correct english is :
+"This allows, for instance, for distributing the available time between all processes of different users, 
+and then among the processes of each user."
 
 
 
