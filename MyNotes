@@ -105,12 +105,26 @@ Before the 3 bullets , the text says :
 The use of term "waiting" is not the same as the term "waiting" is defined in the 
 relevant bulllet. And there is never a definition of "runnable". So although it is 
 understandable what "runnable" means , we have an example of mixing common english with 
-strit terminology in the following lines. I suggest these sentence:
+strict terminology in the following lines (the bullets). I suggest these sentence:
    "For example, if a process is waiting for data from a peripheral device, 
    it is the responsibility of the scheduler to change the state of the process 
    from sleeping to waiting once the data have arrived."
-  And then the 3 bullets will define the terms "sleeping" and "waiting" , avoiding the use
-  of term runnable.
+And then the 3 bullets will define the terms "sleeping" and "waiting" , avoiding the use
+of term runnable.
 
+Ε-2.2.1 Preemptive Multitasking
+(page 40) 
+The text says :
+   "Normally the kernel is in user mode in which it may access only its own data and cannot therefore 
+   interfere with other applications in the system — it usually doesn’t even notice that there are other 
+   programs besides itself.
+   If a process wants to access system data or functions (the latter manage the resources shared between all
+   processes, e.g., filesystem space), it must switch to kernel mode."
+I suppose the writer wanted to write :
+   "Normally the process is in user mode in which it may access only its own data and cannot therefore 
+   interfere with other applications in the system — it usually doesn’t even notice that there are other 
+   programs besides itself.
+   If a process wants to access system data or functions (the latter manage the resources shared between all
+   processes, e.g., filesystem space), it must switch to kernel mode."
 
 
