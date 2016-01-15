@@ -120,7 +120,7 @@ The text says :
    programs besides itself.
    If a process wants to access system data or functions (the latter manage the resources shared between all
    processes, e.g., filesystem space), it must switch to kernel mode."
-I suppose the writer wanted to write :
+I suppose the writer wanted to write (substitute the word kernel in the 1st line with the word process):
    "Normally the process is in user mode in which it may access only its own data and cannot therefore 
    interfere with other applications in the system — it usually doesn’t even notice that there are other 
    programs besides itself.
